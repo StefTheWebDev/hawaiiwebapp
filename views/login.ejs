@@ -1,0 +1,45 @@
+  <div class="login-body">
+    <div class="navbar-plain">
+      <li class="navbar-plain__linkBox--li-2"><img src="/css/img/logo.png" class="navbar-plain__img" /></li>
+  </div>
+    <div class="login-box">
+        <h1 class="login-body__heading"><i class="fas fa-sign-in-alt"></i>Login</h1>
+        <% include ./partials/messages %>
+        <form action="/users/login" method="POST">
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form__input"
+              placeholder="Enter Email"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form__input"
+              placeholder="Enter Password"
+              required
+            />
+          </div>
+          <button type="submit" class="login-body__reg-button">Login</button>
+        </form>
+        <p>
+          No Account? <a href="/users/register">Register</a>
+        </p>
+
+    </div>
+  </div>
+</div>
+       
+</div>
+        
+</div>
+
+  

@@ -1,0 +1,45 @@
+.login-box {
+    height: auto;
+    width: 33%;
+    background-color: $color-white;
+    position: absolute;
+    top: 22%;
+    left: 33.3333%;
+    border-radius: 3px;
+    border: .3px solid $color-grey-dark;
+    box-shadow: 0 3rem 6rem rgba($color-black, .4);
+    padding: 1rem 4rem;
+
+    @media (max-width: 600px) {
+        width: 75%;
+        padding: 0.5rem 2rem;
+        position: absolute;
+        top: 22%;
+        left: 12%;
+    }
+
+    @media (min-width: 768px) {
+        width: 75%;
+        padding: 0.5rem 2rem;
+        position: absolute;
+        top: 22%;
+        left: 12%;
+    }
+
+    @media (min-width: 1024px) {
+        width: 33%;
+        padding: 0.5rem 2rem;
+        position: absolute;
+        top: 30%;
+        left: 33%;
+    }
+
+    @media (min-width: 1800px) {
+        width: 20%;
+        padding: 0.5rem 2rem;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+    
+}

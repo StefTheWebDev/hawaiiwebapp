@@ -1,0 +1,30 @@
+{
+  "name": "hawaii-web-app",
+  "version": "1.0.0",
+  "description": "Hawaii web app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "compile:sass": "node-sass sass/main.scss C:/Users/sjdix/Hawaii-web-app/public/css/style.css -w"
+  },
+  "author": "stefan dixon",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.8",
+    "node-sass": "^4.12.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

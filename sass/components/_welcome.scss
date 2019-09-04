@@ -1,0 +1,71 @@
+.navbar-plain {
+    background-color: $color-white;
+    border-top: .4px solid $color-grey-dark;
+    box-shadow: 0 2rem 4rem rgba($color-black, .6);
+    position: fixed;
+    width: inherit;
+    z-index: 1000;
+    height: 7rem;
+    
+
+
+    
+    &__img {
+        margin-left: 2.5rem;
+        height: 5rem;
+        width: 15rem;
+        float: left;
+        display: inline-block;
+        @media (max-width: 600px) {
+            margin-left: 0;
+        }
+    }
+
+   &__linkBox{
+    
+
+    &:link,
+    &:visited,
+    &--li{
+        float: right;
+        text-align: center;
+        display: inline-block;
+        font-size: 2.5rem;
+        padding-right: 4rem;
+        padding-top: 1.5rem;
+        text-decoration: none;
+        color: $color-grey-dark;
+
+        &:hover {
+            color: $color-primary-light;
+        }
+
+        &-a {
+            display: block;
+            height: 2rem;
+            width: 3rem;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 4rem;
+        }
+    }
+    &--li-2{
+        float: left;
+        text-align: center;
+        display: inline-block;
+        padding-right: 4rem;
+        padding-top: 1rem;
+        text-decoration: none;
+        color: $color-grey-dark;
+
+        @media (max-width: 600px) {
+            font-size: 4rem;
+        }
+    }
+
+   
+   }
+
+   
+}

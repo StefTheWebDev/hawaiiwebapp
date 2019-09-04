@@ -1,0 +1,108 @@
+.login-body {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.7),
+        rgba($color-primary-dark, 0.7)
+      ),
+      url(img/beach-2.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    position: relative;
+
+    &__heading {
+      text-align: center;
+      margin: 1.5rem;
+      font-size: 4rem;
+    }
+
+    &__link--1 {
+    &:link,
+    &:visited{
+      display: block;
+      height: 5rem;
+      font-size: 2.5rem;
+      background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.7));
+      margin: 1rem 2rem;
+      color: $color-white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 3px;
+      border: .5px solid $color-grey-dark;
+    }
+
+    &:hover {
+      background-color: $color-primary-light;
+      color: $color-white;
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+      transform: translateY(-2px);
+    }
+  
+    &:active {
+      box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+      transform: translateY(0);
+    }
+   
+      
+    }
+    &__link--2 {
+    &:link,
+    &:visited{
+      display: block;
+      height: 5rem;
+      font-size: 2.5rem;
+      background-image: linear-gradient(to right bottom, rgba($color-grey-dark, 0.7), rgba($color-white, 0.7));
+      margin: 1rem 2rem;
+      color: $color-white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 3px;
+      border: .5px solid $color-grey-dark;
+    }
+    &:hover {
+      background-image: linear-gradient(to right bottom, rgba($color-grey-dark, 0.7), rgba($color-white, 0.7));
+      color: $color-white;
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+      transform: translateY(-2px);
+    }
+  
+    &:active {
+      box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+      transform: translateY(0);
+    }
+    
+     
+    }
+
+    &__paragraph {
+      margin: -.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    &__reg-button {
+      display: block;
+      height: 7vh;
+      font-size: 2.5rem;
+      background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.7));
+      margin: 1rem 0;
+      color: $color-white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 3px;
+      border: .5px solid $color-grey-dark;
+      width: 100%;
+
+      &:hover {
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+      }
+    
+      &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+      }
+    }
+}

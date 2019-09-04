@@ -1,0 +1,72 @@
+    <div class="login-body">
+        <div class="navbar-plain">
+            <img class="navbar-plain__img" src="/css/img/logo.PNG">
+        </div>
+        <div class="login-box">
+          <h1 class="login-body__heading">
+            <i class="fas fa-user-plus"></i> Register
+          </h1>
+          <% include ./partials/messages %>
+          <form action="/users/register" method="POST" class="form"> 
+            <div class="form__group">
+              <label class="form__label" for="name">Name</label>
+              <input
+                type="name"
+                id="name"
+                name="name"
+                class="form__input"
+                placeholder="Enter Name"
+                required
+                value="<%= typeof name != 'undefined' ? name : '' %>"
+              />
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                placeholder="Enter Email"
+                required
+                value="<%= typeof email != 'undefined' ? email : '' %>"
+              />
+            </div>
+            <div class="form__group">
+              <label for="password" class="form__label">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form__input"
+                placeholder="Create Password"
+                required
+                value="<%= typeof password != 'undefined' ? password : '' %>"
+              />
+            </div>
+            <div class="form__group">
+              <label for="password2" class="form__label">Confirm Password</label>
+              <input
+                type="password"
+                id="password2"
+                name="password2"
+                class="form__input"
+                placeholder="Confirm Password"
+                required
+                value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+              />
+            </div>
+            <button type="submit" class="login-body__reg-button">
+              Register
+            </button>
+          </form>
+          <p class="">Have An Account? <a href="/users/login"> Login</a></p>
+        </div>
+      </div>
+    </div>
+           
+        </div>
+            
+    </div>
+
+      

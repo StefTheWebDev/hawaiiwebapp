@@ -1,0 +1,149 @@
+.home-body {
+    height: 5rem;
+    width: 100%;
+
+}
+
+.section-stories {
+  padding: 14rem 0;
+  position: relative;
+
+  @media (min-width: 1800px) {
+      height: 80rem;
+  }
+}
+
+
+.header-heading-primary {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 17rem;
+    font-size: 16px;
+    @media (min-width: 1800px) {
+        padding: 15rem 15rem;
+    }
+    &__h1{
+        color: $color-white;
+        font-size: 6rem;
+        font-weight: 700;
+        display: block;
+        letter-spacing: 3px;
+        font-family: 'Signika', sans-serif;
+        @media (min-width: 1800px) {
+            font-size: 8rem;
+        }
+        
+
+    }
+}
+
+.header-heading-secondary {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: 16px;
+    
+    &__text{
+        font-size: 5rem;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: 700;
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all .2s;
+        letter-spacing: 12px;
+        font-family: 'Ranga', cursive;
+
+    }
+}
+
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s;
+    letter-spacing: 2px;
+    
+
+    &:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+
+.section-about {
+    height: auto;
+    margin-top: 5.5rem;
+    background-color: $color-white;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.about-box{
+    margin: 12.5%;
+    margin-bottom: 8%;
+    width: 75%;
+    height: 40rem;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    border: 0.3px solid $color-grey-dark;
+    overflow: hidden;
+
+    @media (min-width: 1800) {
+        height: 60rem;
+    }
+    
+    &__img-box{
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+        &--img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__info {
+        display: inline-block;
+        float:right;
+        height: 100%;
+        width: 50%;
+        margin-top: 2rem;
+        @media (min-width: 1800px) {
+            font-size: 1.5rem;
+        }
+
+        &--box {
+            margin: 3rem;
+            
+            &--text {
+                font-size: 1.5rem;
+            }
+        }
+        &--h1{
+            margin-top: 10%;
+            text-align: center;
+            text-transform: uppercase;
+            @media (min-width: 1800px) {
+                font-size: 3rem;
+                margin-top: 5%;
+            }
+        }
+    }
+    &__button {
+        margin: 2rem;
+        text-align: center;
+        
+    }
+}
